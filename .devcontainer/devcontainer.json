@@ -3,5 +3,10 @@
   "image": "kalilinux/kali-rolling",
   "runArgs": ["--privileged"],
   "remoteUser": "root",
+  "features": {
+    "ghcr.io/devcontainers/features/sshd:1": {
+      "version": "latest"
+    }
+  },
   "postCreateCommand": "apt update && apt install -y kali-linux-default kali-desktop-xfce tigervnc-standalone-server dbus-x11"
 }
