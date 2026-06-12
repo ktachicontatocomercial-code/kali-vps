@@ -1,0 +1,7 @@
+{
+  "name": "Kali Linux",
+  "image": "kalilinux/kali-rolling",
+  "runArgs": ["--privileged"],
+  "remoteUser": "root",
+  "postCreateCommand": "apt update && apt install -y kali-linux-default kali-desktop-xfce tigervnc-standalone-server dbus-x11"
+}
