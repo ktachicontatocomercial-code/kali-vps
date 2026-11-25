@@ -18,11 +18,11 @@ Projeto inicial para **Unity 6.3.29f1 (6000.3.29f1)** com **URP**.
 - Tela inicial para criar nome do jogador.
 - Perfil local persistente em JSON.
 - Lobby com personagem provisório, moedas e menus iniciais.
-- Assets de animação, personagens e armas do repositório.
+- Assets importáveis já dentro de `Assets/Stage1/Art/Characters`, `Assets/Stage1/Art/Animations` e `Assets/Stage1/Art/Weapons`.
 
 ## Observação sobre assets grandes
 
-O pacote oficial de personagens de aproximadamente 123 MB não foi colocado no GitHub porque arquivos individuais acima de 100 MB são rejeitados pelo GitHub sem Git LFS. O projeto usa primeiro os assets já presentes neste repositório e pode receber o pacote grande manualmente depois, se necessário.
+O pacote ZIP oficial completo de personagens, com aproximadamente 123 MB, não foi colocado no GitHub porque arquivos individuais acima de 100 MB são rejeitados sem Git LFS. O modelo humano oficial compatível já foi extraído e está dentro de `Assets/Stage1/Art/Characters/Superhero_Male_FullBody.fbx`.
 
 ## Teste rápido
 

@@ -50,6 +50,16 @@ public static class Stage1ProjectBuilder
 
     private static void CreateLobbyCharacter()
     {
+        var importedCharacter = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Stage1/Art/Characters/Superhero_Male_FullBody.fbx");
+        if (importedCharacter != null)
+        {
+            var character = (GameObject)PrefabUtility.InstantiatePrefab(importedCharacter);
+            character.name = "LobbyCharacter_Quaternius";
+            character.transform.position = new Vector3(0f, 0f, 0f);
+            character.transform.localScale = Vector3.one;
+            return;
+        }
+
         var root = GameObject.CreatePrimitive(PrimitiveType.Capsule);
         root.name = "LobbyCharacter_Prototype";
         root.transform.position = new Vector3(0f, 1f, 0f);
