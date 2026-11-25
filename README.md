@@ -27,3 +27,15 @@ O pacote ZIP oficial completo de personagens, com aproximadamente 123 MB, não f
 ## Teste rápido
 
 No Play Mode, digite um nome na tela inicial e clique em **Continuar**. Feche e execute novamente para conferir que o perfil foi salvo localmente.
+
+## Compilar APK sem abrir a interface da Unity
+
+O projeto inclui `Assets/Stage1/Editor/BuildCommandLine.cs` e `build-android.sh`. No terminal do Codespace, estando na raiz do projeto e com a Unity 6000.3.29f1 instalada, execute:
+
+```bash
+export UNITY_EDITOR=/caminho/para/Unity/6000.3.29f1/Editor/Unity
+chmod +x build-android.sh
+./build-android.sh
+```
+
+O script usa `-batchmode`, `-nographics`, `-buildTarget Android`, `-executeMethod` e `-quit`. O resultado será salvo em `Builds/Android/BattleRoyale-Stage1.apk`.
