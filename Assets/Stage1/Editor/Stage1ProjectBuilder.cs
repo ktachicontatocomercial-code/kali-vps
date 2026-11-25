@@ -103,7 +103,7 @@ public static class Stage1ProjectBuilder
         var rect = go.AddComponent<RectTransform>();
         rect.anchorMin = anchor; rect.anchorMax = anchor; rect.anchoredPosition = Vector2.zero; rect.sizeDelta = dimensions;
         var text = go.AddComponent<Text>();
-        text.text = content; text.font = Resources.GetBuiltinResource<Font>("Arial.ttf"); text.fontSize = size;
+        text.text = content; text.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf"); text.fontSize = size;
         text.alignment = TextAnchor.MiddleCenter; text.color = Color.white;
         return text;
     }
